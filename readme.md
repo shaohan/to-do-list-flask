@@ -40,7 +40,6 @@
     <li>Copy the file <code>schema.sql</code> from this repository to the root directory of your project.</li>
     <li>Create a folder called <code>templates</code> in the root directory. Copy the html file from your to-do project into this directory (if it isn't named "index.html", rename it)</li>
     <li>Create a folder called <code>static</code> in the root directory. Copy your css and javascript files into this folder. Don't forget to also change the references in your html files (e.g. instead of 'style.css' the link would be 'static/style.css'</li>
-    <li>Open your <code>index.html</code> file and change all references to css and js files to the new static subfolder.</li>
 </ol>
 
 <h3>Step 4: Update Schema</h3>
@@ -52,8 +51,8 @@
 
 
 <h3>Step 6: Create Route Functions</h3>
+<p>In <code>app.py</code>, create a function for each of the routes you identified in step 1.</p>
 <ol>
-    <li>In <code>app.py</code>, create a function for each of the routes you identified in step 1.</li>
     <li><b>Matching routes</b><br>For each function, specify what route should go there with the @app.route annotation, as in <code>@app.route('/todos')</code>. Don't forget to specify the method (eg POST, DELETE) for routes that are not GET requests.</li>
     <li><b>Request data</b><br>For some routes you will  want to access data about the incoming request. See the Flask documentation for the Request object.</li>
     <li><b>Database interaction</b><br>If you copied the contents of app-easier.py, the file has a set of helper functions to use to access the database. Otherwise, you will need to use Python's sqlite3 module syntax - see link above.</li>
