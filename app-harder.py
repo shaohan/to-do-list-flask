@@ -24,6 +24,7 @@ def index():
 ''' ------------------------------- helper functions for accessing database ------------------------------- '''
 # use get_db() to get a reference to the database
 # then you can call db.execute(query) to issue sql commands
+# and db.commit() to commit your changes
 
 def connect_db():
     """Connects to the specific database."""

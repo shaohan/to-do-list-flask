@@ -52,12 +52,13 @@ def update(todo_id, item):
     for key,val in item.iteritems():
         query = 'UPDATE todos SET %s = ? WHERE rowid = ?' % (key)
         db.execute(query, [val, todo_id])
+        db.commit()
 
 def delete(todo_id):
     '''delete todo with the id todo_id''' 
     db = get_db()
-    query = 'DELETE FROM todos WHERE rowid = ?'
-    db.execute(query, [todo_id])
+    cur = db.cursor().execute('DELETE FROM todos WHERE rowid = ?', [int(todo_id)])
+    db.commit()
 
 def dict_factory(cursor, row):
     """ Makes sqlite3 return dictionaries instead of row objects."""
