@@ -24,12 +24,9 @@
 </div>
 
 <h3>Step 2: Install Dependencies</h3>
-<p>Before you get started you will need to install Flask.<br>
+<p>Before you get started you will need to install Flask: <a href="http://flask.pocoo.org/docs/installation/">Instruction</a>.<br>
 <b>Note:</b> These instructions assume you have installed pip (Python package manager) prior to lab. If you have not yet, see the instructions on Piazza.</p>
-<ol>
-    <li>Open a command prompt and navigate to your to-do project directory.</li>
-    <li>Install flask with the following commands: <code>pip install flask</code></li>
-</ol>
+
 
 <h3>Step 3: Convert your to-do list into a Flask App</h3>
 <p>Perform the following steps to change your existing app into the format expected by Flask:</p>
