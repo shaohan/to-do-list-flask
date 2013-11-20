@@ -2,7 +2,7 @@
 
 <h3>Assignment Description</h3>
 <p>For this combo assignment/lab you will build a functioning to-do list using Python and Flask.</p>
-<p>We expect that you will modify your existing to-do list from previous assignments, but if you prefer to start fresh you can build on to the basic to-do list located here: <a href="http://github.com/krushton/simple-todo">Sample to-do list</a></p>
+<p>We expect that you will modify your existing to-do list from previous assignments, but if you prefer to start fresh you can build on to the basic to-do list located here: <a href="http://github.com/krushton/todo-list">Sample to-do list</a></p>
 
 <h3>Helpful Links</h3>
 <ul>
