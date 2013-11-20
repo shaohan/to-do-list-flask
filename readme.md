@@ -37,10 +37,10 @@
             <li>If you are already familiar with SQL and Python, copy the code from <code>app-harder.py</code></li>
         </ul>
     </li>
-    <li>Copy the file schema.sql from this repository to the root directory of your project.</li>
+    <li>Copy the file <code>schema.sql</code> from this repository to the root directory of your project.</li>
     <li>Create a folder called <code>templates</code> in the root directory. Copy the html file from your to-do project into this directory (if it isn't named "index.html", rename it)</li>
     <li>Create a folder called <code>static</code> in the root directory. Copy your css and javascript files into this folder. Don't forget to also change the references in your html files (e.g. instead of 'style.css' the link would be '/static/style.css'</li>
-    <li>Open the index.html file and change all references to css and js files to the new /static subfolder.</li>
+    <li>Open your <code>index.html</code> file and change all references to css and js files to the new /static subfolder.</li>
 </ol>
 
 <h3>Step 4: Update Schema</h3>
