@@ -23,25 +23,24 @@ def index():
 
 ''' ------------------------------- helper functions for accessing database ------------------------------- '''
 def get_by_id(todo_id):
-    ''' returns a todo with the id todo_id '''
+    ''' returns a dictionary representation of the todo with the id todo_id '''
     db = get_db()
     cur = db.execute('SELECT * FROM todos WHERE rowid = ?', [todo_id])
     return cur.fetchone()
 
 def get_all():
-    '''fetch all todos'''
+    '''returns an array of todos'''
     db = get_db()
     cur = db.execute('SELECT * FROM todos ORDER BY id DESC')
     return cur.fetchall()
 
 def add_new(item):
-    '''create todo with the values in item (a dictionary)'''
+    '''create todo with the values in item (a dictionary). returns the id of the newly added todo '''
     db = get_db()
     placeholders = ', '.join(['?'] * len(item))
     columns = ', '.join(item.keys())
 
     query = 'INSERT INTO todos (%s) VALUES (%s)' % (columns, placeholders)
-    print query
     cur = db.execute(query, item.values())
     new_item_id  = cur.lastrowid
     db.commit()
