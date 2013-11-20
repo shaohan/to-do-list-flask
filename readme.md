@@ -36,8 +36,8 @@
 <ol>
     <li>Create a file called <code>app.py</code> in the root directory of your project. Replace its contents with the contents with one of the following files in <b>this</b> repository:
         <ul>
-            <li>If you are new to Python and SQL, copy app-standard.py</li>
-            <li>If you are already familiar with SQL and Python, copy the code from app-harder.py</li>
+            <li>If you are new to Python and SQL, copy <code>app-easier.py</code></li>
+            <li>If you are already familiar with SQL and Python, copy the code from <code>app-harder.py</code></li>
         </ul>
     </li>
     <li>Copy the file schema.sql from this repository to the root directory of your project.</li>
