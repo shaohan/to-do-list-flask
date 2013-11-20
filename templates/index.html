@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Easier Said Than Done To-do List</title>
+    <meta charset="utf-8">
+
+    <!-- link to css file -->
+    <link rel="stylesheet" type="text/css" href="static/_css/style.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>Easier Said Than Done To-do List</h1>
+	</div><!-- close header -->
+
+
+	<div id="container">
+
+		<div class="column">
+			<ul id="todo-list">
+				<li>
+					<div class="item-text">
+						Wash dishes
+					</div>
+					<form class="todo-list-remove">
+						<input type="submit" id="delete" value="Hooray!! This is done.">
+					</form>
+				</li>
+
+				<li>
+					<div class="item-text">
+						Lose 10 lbs
+					</div>
+					<form class="todo-list-remove">
+						<input type="submit" id="delete" value="Hooray!! This is done.">
+					</form>
+				</li>
+
+			</ul>
+		</div>
+
+
+		<!-- form to add an item to the list -->
+
+		<div class="column">
+			<form id="todo-form">
+			    <label>* Please add your to-do task here *</label><br>
+			    <input name="todo-form-add" id="todo-form-add" type="text" placeholder="Please enter a new item">
+			    <input type="submit">
+			</form>
+
+			<div id="show-error">
+			</div>
+		</div>
+
+	</div><!-- close container -->
+
+	<script src="static/_js/jquery-1.10.2.min.js"></script>
+	<script src="static/_js/script.js"></script>
+
+</body>
+</html>
+
+
+
